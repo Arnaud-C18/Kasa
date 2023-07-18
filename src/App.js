@@ -17,3 +17,15 @@ export default function App() {
         </div>
     );
 }
+export default function App() {
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/logement" element={<Product />}/>
+                <Route path="/a_propos" element={<About />}/>
+                <Route path="/*" element={<Error />}/>
+            </Routes>
+        </div>
+    );
+}
