@@ -1,0 +1,34 @@
+.banner
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    width: 90%
+    max-width: 1240px
+    height: 223px
+
+.banner img
+    width: 1240px
+    height: 223px
+    object-fit: cover
+    filter: brightness(0.7)
+    border-radius: 25px
+
+.banner p 
+    display: block
+    position: absolute
+    font-size: 48px
+    color: white
+    margin: 30px
+
+@media screen and (max-width: 640px) 
+    .banner
+        height: 111px
+    
+    .banner img
+        height: 111px
+    
+    .banner p
+        font-size: 24px
+        margin: 20px
+  
