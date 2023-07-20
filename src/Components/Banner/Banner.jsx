@@ -1,11 +1,11 @@
 import React from "react";
 import "./Banner.sass"
 
-export default function Banner( {imageSource} , {imageAlt}) {
+export default function Banner({ imageSource, imageAlt, bannerText}) {
     return (
         <div className="banner">
             <img src={imageSource} alt={imageAlt} />
-            <p>Chez vous, partout et ailleurs</p>
+            <p>{bannerText}</p>
         </div>
     )
 }

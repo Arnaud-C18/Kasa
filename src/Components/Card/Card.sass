@@ -1,0 +1,51 @@
+.cardContainer
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        width: 90%
+        max-width: 1240px
+        background-color: #f6f6f6
+        border-radius: 25px
+        margin: 40px
+        z-index: -2
+
+.card
+    display: flex
+    width: 45%
+    max-width: 340px
+    height: 340px
+    position: relative
+    margin: 25px auto 25px auto
+    border-radius: 10px
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%,rgba(0,0,0, 0.6) 100%)
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 10px
+        z-index: -1
+
+    p
+        position: absolute
+        font-size: 18px
+        width: 90%
+        bottom: 0px
+        left: 15px
+        color: white
+
+@media screen and (max-width: 640px)
+    .cardContainer
+        background-color: white
+    
+    .card
+        width: 100%
+        max-width: none
+        height: 225px
+        margin: 0px
+        margin-bottom: 20px
+
+        img
+            width: 100%
+            max-width: none
+            height: 225px

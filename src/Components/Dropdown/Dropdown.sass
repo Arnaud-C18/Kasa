@@ -1,0 +1,65 @@
+.dropdown
+    width: 90%
+    max-width: 1023px
+
+    .header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 52px
+        margin-top: 40px
+        background-color: #ff6060
+        border-radius: 5px
+        color: white
+
+        span
+            font-size: 24px
+            padding: 10px
+
+        .arrow
+            padding: 20px
+            cursor: pointer
+
+            &.up
+                transform: rotate(180deg)
+                transition: transform 0.3s ease
+
+            &.down
+                transform: rotate(0)
+                transition: transform 0.3s ease
+
+    .content
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.3s ease
+        color: #ff6060
+        background-color: #f6f6f6
+        border-radius: 5px
+
+        .text
+            font-size: 20px
+            margin: 25px
+
+    .open
+        max-height: 200px
+        transition: max-height 0.3s ease
+
+@media screen and (max-width: 640px)
+    .dropdown
+
+        .header
+            height: 30px
+            margin-top: 20px
+
+            span
+                font-size: 13px
+
+            .arrow
+                width: 16px
+                padding: 10px
+    
+        .content
+
+            .text
+                font-size: 13px
+                margin: 15px

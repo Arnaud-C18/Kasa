@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import "./Navbar.sass"
-import Logo from "../../Assets/Images/Logo.png"
+import Logo from "../../Assets/Images/Kasa.png"
 
 
 export default function Navbar() {

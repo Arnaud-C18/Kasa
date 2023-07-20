@@ -10,19 +10,7 @@ export default function App() {
         <div className="App">
             <Routes>
                 <Route path="/" element={<Home />}/>
-                <Route path="/logement" element={<Product />}/>
-                <Route path="/a_propos" element={<About />}/>
-                <Route path="/*" element={<Error />}/>
-            </Routes>
-        </div>
-    );
-}
-export default function App() {
-    return (
-        <div className="App">
-            <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/logement" element={<Product />}/>
+                <Route path="/logement/:id" element={<Product />}/>
                 <Route path="/a_propos" element={<About />}/>
                 <Route path="/*" element={<Error />}/>
             </Routes>
