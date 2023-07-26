@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.sass"
-import Home from "./Pages/Home/Home";
-import Product from "./Pages/Product/Product"
-import About from "./Pages/About/About"
-import Error from "./Pages/Error/Error"
+import HomePage from "./Pages/Home/HomePage";
+import ProductPage from "./Pages/Product/ProductPage"
+import AboutPage from "./Pages/About/AboutPage"
+import ErrorPage from "./Pages/Error/ErrorPage"
 
 export default function App() {
     return (
         <div className="App">
             <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/logement/:id" element={<Product />}/>
-                <Route path="/a_propos" element={<About />}/>
-                <Route path="/*" element={<Error />}/>
+                <Route path="/" element={<HomePage />}/>
+                <Route path="/logement/:id" element={<ProductPage />}/>
+                <Route path="/a_propos" element={<AboutPage />}/>
+                <Route path="/*" element={<ErrorPage />}/>
             </Routes>
         </div>
     );

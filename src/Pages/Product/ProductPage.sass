@@ -1,0 +1,28 @@
+.Product
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .dropdownsContainer
+        display: flex
+        width: 90%
+        max-width: 1240px
+        justify-content: space-between
+
+        .dropdown
+            width: 47%
+
+            .content
+                .text
+                    display: flex
+                    flex-direction: column
+
+@media screen and (max-width: 640px)
+    .Product
+        .dropdownsContainer
+            flex-direction: column
+
+            .dropdown
+                width: 100%
+
+

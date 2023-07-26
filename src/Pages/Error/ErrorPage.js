@@ -1,12 +1,12 @@
 import React from "react"
-import "./Error.sass"
+import "./ErrorPage.sass"
 import Navbar from "../../Components/Navbar/Navbar"
-import Redirect from "../../Components/Redirect/Redirect"
+import Redirect from "../../Components/Error/Error"
 import Footer from "../../Components/Footer/Footer"
 
-export default function Error() {
+export default function ErrorPage() {
     return (
-        <div className="error">
+        <div className="Error">
             <Navbar />
             <Redirect />
             <Footer />

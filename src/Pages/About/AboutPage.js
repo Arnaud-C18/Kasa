@@ -1,14 +1,14 @@
 import React from "react"
-import "./About.sass"
+import "./AboutPage.sass"
 import Navbar from "../../Components/Navbar/Navbar.jsx"
 import Banner from "../../Components/Banner/Banner.jsx"
 import AboutBannerImage from "../../Assets/Images/AboutBannerImage.png"
 import Dropdown from "../../Components/Dropdown/Dropdown"
 import Footer from "../../Components/Footer/Footer"
 
-export default function Home() {
+export default function AboutPage() {
   return (
-    <div className="HomePage">
+    <div className="About">
       <Navbar />
       <Banner imageSource={AboutBannerImage} imageAlt="Photo de montagnes" bannerText="" />
       <Dropdown title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
