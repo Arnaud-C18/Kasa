@@ -36,6 +36,7 @@ const equipments = selectedProduct.equipments.map((attribute, index) => (
   </span>
 ))
 
+
 return (
   <div className="Product">
       <Navbar />

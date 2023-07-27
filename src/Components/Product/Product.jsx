@@ -5,10 +5,11 @@ import ActiveStar from "../../Assets/Images/ActiveStar.png";
 import InactiveStar from "../../Assets/Images/InactiveStar.png";
 
 
-export default function Product({ selectedProduct }) {
+export default function Product({selectedProduct}) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const counterValue = currentIndex + 1;
     const [firstName, lastName] = selectedProduct.host.name.split(" ");
+    const [showArrows, setShowArrows] = useState(selectedProduct.pictures.length > 1)
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
@@ -40,10 +41,12 @@ export default function Product({ selectedProduct }) {
         <div className="product">
             <div className="slidersContainer">
                 <img src={selectedProduct.pictures[currentIndex]} alt="" />
+                {showArrows ? (
                 <div className="arrowsContainer">
                     <img className="left" src={Arrow} alt="Précédente" onClick={goToPrevious} />
                     <img className="right" src={Arrow} alt="Suivante" onClick={goToNext} />
                 </div>
+                ) : null}
                 <div className="counter">
                     <span>{counterValue}/{selectedProduct.pictures.length}</span>
                 </div>
