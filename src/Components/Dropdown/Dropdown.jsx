@@ -11,9 +11,9 @@ export default function Dropdown({ title, content }) {
 
     return (
         <div className="dropdown">
-            <div className="header">
+            <div className="header" onClick={toggleDropdown}>
                 <span>{title}</span>
-                <img src={Arrow} alt="Fleche de menu" className={`arrow ${isOpen ? "up" : "down"}`} onClick={toggleDropdown} />
+                <img src={Arrow} alt="Fleche de menu" className={`arrow ${isOpen ? "up" : "down"}`} />
             </div>
             <div className={`content ${isOpen ? "open" : "closed"}`}>
                 <div className="text">{content}</div>

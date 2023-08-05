@@ -1,0 +1,48 @@
+.carousel
+    position: relative
+    width: 100%
+    height: 415px
+
+    img
+        width: 100%
+        height: 100%
+        border-radius: 25px
+        object-fit: cover
+
+    .arrowsContainer
+        display: flex
+        justify-content: space-between
+        position: absolute
+        width: 100%
+        top: 158px
+
+        img
+            width: 46px
+            padding: 20px
+            cursor: pointer
+
+        .right
+            transform: rotate(180deg)
+
+    .counter
+        display: flex
+        justify-content: center
+        width: 100%
+        position: absolute
+        bottom: 20px
+        color: white
+        font-size: 18px
+
+@media screen and (max-width: 640px)
+    .carousel
+        height: 255px
+    
+        .arrowsContainer
+            top: 115px
+    
+            img
+                width: 12px
+                padding: 10px
+    
+            .counter
+                display: none

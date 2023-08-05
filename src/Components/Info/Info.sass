@@ -1,0 +1,92 @@
+.info
+    display: flex
+    justify-content: space-between
+
+    .description
+        margin: 0px
+
+        .productTitle
+            font-size: 36px
+            margin: 30px 0px 5px 0px
+
+        .productLocation
+            margin: 0px 0px 25px 0px
+            font-size: 18px
+
+        .attributes
+            display: flex
+            flex-wrap: wrap
+
+            .attribute
+                padding: 4px 15px 4px 15px
+                background-color: #ff6060
+                font-size: 14px
+                color: white
+                border-radius: 10px
+                margin-bottom: 5px
+                margin-right: 10px
+
+    .owner
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-end
+        margin: 10px 10px 0px 0px
+
+        .identity
+            display: flex
+
+            .name
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                margin: 10px 10px 0px 0px
+                font-size: 18px
+
+            img
+                width: 64px
+                height: 64px
+                object-fit: cover
+                border-radius: 100px
+
+@media screen and (max-width: 640px)
+    .info
+        flex-direction: column
+        justify-content: space-between
+
+        .description
+            .productTitle
+                font-size: 18px
+                margin: 10px 0px 5px 0px
+
+            .productLocation
+                font-size: 14px
+                margin: 0px 0px 10px 0px
+
+            .attributes
+                display: flex
+
+                .attribute
+                    padding: 0px 5px 0px 5px
+                    font-size: 10px
+
+        .owner
+            flex-direction: row-reverse
+            justify-content: space-between
+            align-items: center
+            margin: 20px 10px 0px 0px
+
+            .identity
+                .name
+                    margin: 0px 10px 0px 0px
+                    font-size: 12px
+
+                img
+                    width: 32px
+                    height: 32px
+                    object-fit: cover
+                    border-radius: 100px
+
+            .ratings
+                img
+                    width: 18px

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./ProductPage.sass";
 import Navbar from "../../Components/Navbar/Navbar";
-import Product from "../../Components/Product/Product"
+import Carousel from "../../Components/Carousel/Carousel";
+import Info from "../../Components/Info/Info"
 import data from "../../Assets/Data/Data";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 import Footer from "../../Components/Footer/Footer";
@@ -40,7 +41,10 @@ const equipments = selectedProduct.equipments.map((attribute, index) => (
 return (
   <div className="Product">
       <Navbar />
-      <Product selectedProduct={selectedProduct} />
+      <div className="item">
+        <Carousel selectedProduct={selectedProduct} />
+        <Info selectedProduct={selectedProduct}/>
+      </div>
       <div className="dropdownsContainer">
         <Dropdown title="Description" content={selectedProduct.description} />
         <Dropdown title="Équipements" content={equipments} />
