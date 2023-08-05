@@ -9,7 +9,7 @@ export default function Product({selectedProduct}) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const counterValue = currentIndex + 1;
     const [firstName, lastName] = selectedProduct.host.name.split(" ");
-    const [showArrows, setShowArrows] = useState(selectedProduct.pictures.length > 1)
+    const [showArrows] = useState(selectedProduct.pictures.length > 1)
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
